@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   Modified Version of floppybird by Nebez Briefkani
+-->
+   <head>
+      <title>Floppy Pong</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+      <!-- Open Graph tags -->
+      <meta property="og:title" content="Floppy Pong" />
+      <meta property="og:description" content="Play floppy pong. A remake of popular game flappy bird using just html/css/js." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Floppy Pong" />
+
+      <link rel="image_src" href="assets/medal_bronze.png"/>
+      <link rel="shortcut icon" href="assets/medal_bronze.png"/>
+      <link rel="apple-touch-icon-precomposed" href="assets/medal_bronze.png"/>
+      
+      <!-- Style sheets -->
+      <link href="css/reset.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="gamecontainer">
+         <div id="gamescreen">
+            <div id="sky" class="animated">
+               <div id="flyarea">
+                  <div id="ceiling" class="animated"></div>
+                  <!-- This is the flying and pipe area container -->
+                  <div id="player" class="bird animated"></div>
+                  
+                  <div id="bigscore"></div>
+                  
+                  <div id="splash"></div>
+                  
+                  <div id="scoreboard">
+                     <div id="medal"></div>
+                     <div id="currentscore"></div>
+                     <div id="highscore"></div>
+                     <div id="replay"><img src="assets/replay.png" alt="replay"></div>
+                  </div>
+                  
+                  <!-- Pipes go here! -->
+               </div>
+            </div>
+            <div id="land" class="animated"><div id="debug"></div></div>
+         </div>
+      </div>
+      <div id="footer">
+         <p>FLOPPY PONG (v 1.0) by</p> 
+         <a href="http://www.josephmilla.com">Joseph Milla</a>
+      </div>
+      <div class="boundingbox" id="playerbox"></div>
+      <div class="boundingbox" id="pipebox"></div>
+      
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.transit.min.js"></script>
+      <script src="js/buzz.min.js"></script>
+      <script src="js/main.js"></script>
+   </body>
+</html>
